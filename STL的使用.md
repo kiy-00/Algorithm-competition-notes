@@ -55,7 +55,8 @@ string tt=s.substr(0,4);
 
 string s="12345";
 int t=stoi(s);
-//t=12345
+//t=12345，如果有前导零、非法字符等会出错
+//注意转化的数字范围不能超过int、long long等
 
 string s="123.45";
 double t=stod(s);
@@ -264,4 +265,9 @@ x^=1	//0变1，1变0
 ```
 
 
+## 细节
+
+```c++
+//注意sqrt和sqrtl的使用场景
+```
 
